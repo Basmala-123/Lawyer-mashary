@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 
@@ -13,7 +12,9 @@
 
 body {
   background-color: rgb(240, 234, 221);
+    font-family: 'Poppins', sans-serif
 }
+
 
 .main-page {
   background-image: url(../img/sebastian-pichler-bAQH53VquTc-unsplash.jpg);
@@ -38,9 +39,9 @@ body {
 
 .header,
 .header-nav {
-  /* position: relative; */
+  position: relative;
   padding: 5px;
-  z-index: 5;
+  z-index: 1;
 }
 
 .header {
@@ -48,20 +49,18 @@ body {
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
-
-.row.header-contact {
+.header-contact {
   display: flex;
   justify-content: center;
   color: white;
 }
-
-.col-md-6.col-sm-12.contact-mail {
+.header-contact .contact-mail{
+  display: flex;
   justify-content: center;
   text-align: center;
   padding: 3px;
 }
-
-.col-md-6.col-sm-12.contact-mail a {
+.contact-mail a {
   color: #a97416;
   font-size: 1.1rem;
   font-weight: 500;
@@ -69,9 +68,24 @@ body {
   padding: 3px 10px;
   margin: 0px 5px;
 }
-
+.contact-mail .fas{
+  margin: -5px 4px;
+}
 .collapse.navbar-collapse ul {
   margin: 5px;
+}
+
+#lang-btn {
+  background-color:#a97416;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+#lang-btn:hover{
+background-color: white;
+border: 1px solid #a97416;
+color: #a97416;
 }
 
 .col-md-6.col-sm-12.contact-mail a:hover,
@@ -113,6 +127,12 @@ li.nav-item a:hover {
   padding: 50px 15px;
   position: relative;
 }
+/* @media screen and (max-width:600px) {
+  .home{
+    display: none;
+  }
+  
+} */
 
 .home::before {
   content: '';
@@ -323,13 +343,16 @@ li.nav-item a:hover {
   opacity: 1;
 }
 
-.team:hover {
+.team:hover  {
   transform: scale(1.2);
   transition: all .5s;
 
   /* transform: skew( 5deg); */
 }
-
+.form-control:hover{
+  transform: scale(.9);
+  transition: all .3s;
+}
 .profile {
   padding: 20px;
   background-color: #fff;

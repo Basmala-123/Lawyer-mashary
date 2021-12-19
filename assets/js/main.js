@@ -65,6 +65,7 @@ function validateForm() {
 
 
 // show top btn
+
 mybtn = document.getElementById("top-btn");
 window.onscroll = function(){scrollFunction()};
 function scrollFunction(){
@@ -79,3 +80,13 @@ function scrollFunction(){
 function topFunction(){
     document.documentElement.scrollTop = 0;
 }
+
+
+/////////////
+const button=document.getElementById('toggle');
+document.addEventListener("click",function (){
+    var elem=document.querySelector(".home");
+    
+    elem.style.display = (elem.style.display != 'none') ? 'none' : 'block';
+console.log("hi")
+})

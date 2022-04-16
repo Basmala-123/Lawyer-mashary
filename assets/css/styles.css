@@ -13,6 +13,7 @@
 body {
   background-color: rgb(240, 234, 221);
     font-family: 'Poppins', sans-serif
+    
 }
 
 
@@ -207,13 +208,6 @@ li.nav-item a:hover {
 
   }
 }
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
-
 .about {
   margin: 20px 0;
   padding: 0;
@@ -454,3 +448,10 @@ footer .container a:hover {
   background: #cc983f;
   color: #fff;
 }
+.contact,
+h2,
+p,
+img,
+blockquote {
+    overflow: hidden;
+  }

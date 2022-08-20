@@ -17,12 +17,15 @@ body {
 }
 .contact,
 h2,
+h3,
+h5,
 p,
 img,
 blockquote,
-h5,
 li,
-.profile h3,
+a,
+label,
+.text-in,
 .footer-link{
     overflow: hidden;
   }
